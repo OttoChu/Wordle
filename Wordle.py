@@ -129,14 +129,14 @@ while True:
     for q in range(1, len(lines) + 1):
         x = 60
         for p in range(1, len(lines[q - 1]) + 1):
-            font = pygame.font.Font("D:\_Work\_Computer Science\A Level\_random code\Wordle\Arial.ttf", 50)
+            font = pygame.font.Font("Arial.ttf", 50)
             text_surf = font.render(lines[q - 1][p - 1], True, WHITE)
             text_rect = text_surf.get_rect(center = (x + 30, y + 30))
             screen.blit(text_surf, text_rect)
             x += 65
         y += 65 
     pygame.draw.rect(screen, BLACK, (0, 450, 440, 55))
-    font = pygame.font.Font("D:\_Work\_Computer Science\A Level\_random code\Wordle\Arial.ttf", 30)
+    font = pygame.font.Font("Arial.ttf", 30)
     if end:
         if colour[1]:
             text = f'Solved in {line_number} tries'
@@ -151,7 +151,7 @@ while True:
         text_rect = text_surf.get_rect(center = (220, 475))
         screen.blit(text_surf, text_rect)
 # drawing out the back button
-    font = pygame.font.Font("D:\_Work\_Computer Science\A Level\_random code\Wordle\Arial.ttf", 20)
+    font = pygame.font.Font("Arial.ttf", 20)
     new_game_text_surf = font.render('New game', True, BLACK)
     new_game_text_rect = new_game_text_surf.get_rect(center = (220, 525))
     new_game_rect = pygame.Rect((145, 500, 150, 50))
