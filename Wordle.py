@@ -146,7 +146,7 @@ while True:
         text_rect = text_surf.get_rect(center = (220, 475))
         screen.blit(text_surf, text_rect)
     if error:
-        text = 'Not a vaild word!'
+        text = 'Not a valid word!'
         text_surf = font.render(text, False, WHITE)
         text_rect = text_surf.get_rect(center = (220, 475))
         screen.blit(text_surf, text_rect)
